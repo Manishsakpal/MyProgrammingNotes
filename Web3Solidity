@@ -1,39 +1,39 @@
-##AccessModifiers public,private,protected
-##Any UnderScore(_) Before declaring a function or a contract should assume to be a private one
-##Etherium dost have a inbuild function called Hashing which is used to encode the data
-##Get Array length =id.ArrayName.push()
-##Get the current Position=ArrayName.push(NewItem)-1
+## AccessModifiers public,private,protected
+## Any UnderScore(_) Before declaring a function or a contract should assume to be a private one
+## Etherium dost have a inbuild function called Hashing which is used to encode the data
+## Get Array length =id.ArrayName.push()
+## Get the current Position=ArrayName.push(NewItem)-1
 
 
-#Learning Solidity So it could help u know web3's Blockchain in better way
+# Learning Solidity So it could help u know web3's Blockchain in better way
 
-#Every pram does get updating day by day so with keeping this in mind This program  is been designed we need to first initialize the specific version that v r going to use of solidit
+# Every pram does get updating day by day so with keeping this in mind This program  is been designed we need to first initialize the specific version that v r going to use of solidit
 pragma solitidy VersionYouDoUse; //eg.">=0.5.0 <0.6.0"
 
-#here contract is same as class in c++ to build a class/contract we can write is as given below
+# here contract is same as class in c++ to build a class/contract we can write is as given below
 contract ContractName{
 }
 
-#Variables
+# Variables
 uint VariabeName=Vale; #here i have used the unsigned(Nnn Negative) by default it take a unsigned integer of size 254 bits we can change it to uint32,uint16,uint8
 
-#MathOperators
+# MathOperators
 ##Adding
 int FirstVaribale,SecondVaribale;
 int SumValue =FirstVaribale+SecondVaribale;
-##Subtracting
+## Subtracting
 int SubValue=FirstVariable-SecondVaribale;
-##Multiplying
+## Multiplying
 int MulValue=FirstVaribale*SecondVaribale;
-##Division 
+## Division 
 int DivValue=FirstVariable/SecondVaribale;
-##Modulus
+## Modulus
 int ModuluValue=FirstVaribale%SecondVaribale;
-##Square
+## Square
 int Sqr=FirstVariable**SeondVaribale;
 
 
-#Structers in solidity
+# Structers in solidity
 
 struct StructureName{
 datatype Varibale1;
@@ -41,14 +41,14 @@ datatype Variable2;
 }
 
 
-#Array
+# Array
 datatype[ifSizeGiven] Arrayvariable;  //If the size is not givenit will be a dynamic type which means which it does not have a fix length of storing a data init
 
 
-#Creating a public array from a Structure 
+# Creating a public array from a Structure 
 structName[] AccessModifiers ArrayVariable; // here Acccess modifiers can be Public Private or Proctected
 
-##Exmple to  add data from the structure to the array varibale
+## Exmple to  add data from the structure to the array varibale
 //Creating a vraible of array
 datatype[size] arrayVariableName;
 
@@ -65,20 +65,20 @@ StructureName[] public arrayVaribaleNAme;
 StructureName newVariableName= StructureName(Data1,Data2);
 arrayVariable.push(newData); //Here New Data it newVariableName
 
-#Creating a Function 
+# Creating a Function 
 function functionName(datatype parameter1,datatype memory parameter2) AccessModifier {     //here memory word says he can directly take the reference of the og variable
 
 }
 
-#Public Function with return 
+# Public Function with return 
 function FunctionName(datatype para1,datatype para2) accessModifier ViewOrPureOrNo IfReturn(datatypeReturn) {
 }
 
 
-#Hashing data
+# Hashing data
 datatype variableName=keccak256(abi.encodePacked(variableThatNeedToHaveHashConversion));
 
-#Type Casting converting 1 to other type of data
+# Type Casting converting 1 to other type of data
 uint32 variableName32=32;
 uint16 variableName16=uint16(variable32);
 
@@ -86,7 +86,7 @@ uint16 variableName16=uint16(variable32);
 //Dem data ignore "function functionname(datatype memory para1, datatype memory para2) accessModifiers viewPureOrNothing returns(datatype memory){}
 
 
-#Even Called so somechanges had be done with calling some contract or function
+# Even Called so somechanges had be done with calling some contract or function
 event eventName(datatypes para1, datatype para2);
 function FunctionName(datatype para1) public returns(datatype){
     datatype USerInput+=UserInput;
@@ -98,3 +98,5 @@ FunctionName("Manish"); #ManishManish will be the Output
 
 
 
+# Mapping 
+mapping (key=>value) accessModifier mappingName;  //key and value can be of any datatype
