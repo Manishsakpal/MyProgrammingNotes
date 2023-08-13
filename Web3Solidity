@@ -1,6 +1,6 @@
 ##AccessModifiers public,private,protected
 ##Any UnderScore(_) Before declaring a function or a contract should assume to be a private one
-
+##Etherium dost have a inbuild function called Hashing which is used to encode the data
 
 
 
@@ -70,5 +70,16 @@ function functionName(datatype parameter1,datatype memory parameter2) AccessModi
 }
 
 #Public Function with return 
-function FunctionName(datatype para1,datatype para2) accessModifier ViewOrPure IfReturn(datatypeReturn) {
+function FunctionName(datatype para1,datatype para2) accessModifier ViewOrPureOrNo IfReturn(datatypeReturn) {
 }
+
+
+#Hashing data
+datatype variableName=keccak256(abi.encodePacked(variableThatNeedToHaveHashConversion));
+
+#Type Casting converting 1 to other type of data
+uint32 variableName32=32;
+uint16 variableName16=uint16(variable32);
+
+
+//Dem data ignore "function functionname(datatype memory para1, datatype memory para2) accessModifiers viewPureOrNothing returns(datatype memory){}
