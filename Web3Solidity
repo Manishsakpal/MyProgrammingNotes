@@ -1,11 +1,74 @@
+##AccessModifiers public,private,protected
+##Any UnderScore(_) Before declaring a function or a contract should assume to be a private one
+
+
+
 
 #Learning Solidity So it could help u know web3's Blockchain in better way
 
-//Every pram does get updating day by day so with keeping this in mind This program  is been designed we need to first initialize the specific version that v r going to use of solidit
+#Every pram does get updating day by day so with keeping this in mind This program  is been designed we need to first initialize the specific version that v r going to use of solidit
 pragma solitidy VersionYouDoUse; //eg.">=0.5.0 <0.6.0"
 
-//here contract is same as class in c++ to build a class/contract we can write is as given below
+#here contract is same as class in c++ to build a class/contract we can write is as given below
 contract ContractName{
 }
 
-//Variables
+#Variables
+uint VariabeName=Vale; #here i have used the unsigned(Nnn Negative) by default it take a unsigned integer of size 254 bits we can change it to uint32,uint16,uint8
+
+#MathOperators
+##Adding
+int FirstVaribale,SecondVaribale;
+int SumValue =FirstVaribale+SecondVaribale;
+##Subtracting
+int SubValue=FirstVariable-SecondVaribale;
+##Multiplying
+int MulValue=FirstVaribale*SecondVaribale;
+##Division 
+int DivValue=FirstVariable/SecondVaribale;
+##Modulus
+int ModuluValue=FirstVaribale%SecondVaribale;
+##Square
+int Sqr=FirstVariable**SeondVaribale;
+
+
+#Structers in solidity
+
+struct StructureName{
+datatype Varibale1;
+datatype Variable2;
+}
+
+
+#Array
+datatype[ifSizeGiven] Arrayvariable;  //If the size is not givenit will be a dynamic type which means which it does not have a fix length of storing a data init
+
+
+#Creating a public array from a Structure 
+structName[] AccessModifiers ArrayVariable; // here Acccess modifiers can be Public Private or Proctected
+
+##Exmple to  add data from the structure to the array varibale
+//Creating a vraible of array
+datatype[size] arrayVariableName;
+
+//Creating a Structure data Type
+struct StructureName{
+    unit RollNO;
+    string StudentNames;
+}
+
+//Creating a array Structure with public access
+StructureName[] public arrayVaribaleNAme;
+
+//Normally Adding data in a structure
+StructureName newVariableName= StructureName(Data1,Data2);
+arrayVariable.push(newData); //Here New Data it newVariableName
+
+#Creating a Function 
+function functionName(datatype parameter1,datatype memory parameter2) AccessModifier {     //here memory word says he can directly take the reference of the og variable
+
+}
+
+#Public Function with return 
+function FunctionName(datatype para1,datatype para2) accessModifier ViewOrPure IfReturn(datatypeReturn) {
+}
