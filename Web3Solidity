@@ -1,7 +1,8 @@
 ##AccessModifiers public,private,protected
 ##Any UnderScore(_) Before declaring a function or a contract should assume to be a private one
 ##Etherium dost have a inbuild function called Hashing which is used to encode the data
-
+##Get Array length =id.ArrayName.push()
+##Get the current Position=ArrayName.push(NewItem)-1
 
 
 #Learning Solidity So it could help u know web3's Blockchain in better way
@@ -83,3 +84,17 @@ uint16 variableName16=uint16(variable32);
 
 
 //Dem data ignore "function functionname(datatype memory para1, datatype memory para2) accessModifiers viewPureOrNothing returns(datatype memory){}
+
+
+#Even Called so somechanges had be done with calling some contract or function
+event eventName(datatypes para1, datatype para2);
+function FunctionName(datatype para1) public returns(datatype){
+    datatype USerInput+=UserInput;
+    emit eventName(para1,UserInput);
+    return UserInput;
+}
+
+FunctionName("Manish"); #ManishManish will be the Output
+
+
+
