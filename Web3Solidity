@@ -1,1 +1,11 @@
 
+#Learning Solidity So it could help u know web3's Blockchain in better way
+
+//Every pram does get updating day by day so with keeping this in mind This program  is been designed we need to first initialize the specific version that v r going to use of solidit
+pragma solitidy VersionYouDoUse; //eg.">=0.5.0 <0.6.0"
+
+//here contract is same as class in c++ to build a class/contract we can write is as given below
+contract ContractName{
+}
+
+//Variables
