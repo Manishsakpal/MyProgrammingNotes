@@ -37,3 +37,116 @@ for(;condition;increment){performer;}
 do{performer;}while(condition)
 void functionName(datatype varibale,datatype varibale){performer;}      #No Return
 datatype functionName(datatype varibale,datatype varibale){performer; return ;}      #With Return
+
+
+//DRY: Don't repeat your self
+//Constructor(Default Called) is same name as classname and no return and access specifier as always public
+//default All the Attribute and method are Private default if need to access it should use access modifier public: to access them
+//Private acccess specifier usinf another function ot that class
+//Puclic accessable over any part of that class
+//protected accessable throught the inheritated class protected is in parent class
+
+
+//Function with in the class
+class classname{
+public:
+void FunctionName(){
+cout<<"hello World";
+}
+};
+
+
+//declare functin outside class
+
+class classname{
+void FunctionName();
+};
+
+void classname::FunctionName(){
+cout<<"Hello World";
+}
+
+
+//create a object of class
+classname objectname;
+
+//Look for attributes in the class
+objectname.attributename
+
+
+//Access Specifier is used to access the attribute and method outside a class here is the example the function is publically accessable with the class
+class classname{
+public:
+void functionname(){
+cout<<"hello world";
+}
+};
+
+
+
+# OOPS Main
+
+//Encapsulation-------------------------------
+//important Data hiding he has Get Set methods where attribute are private which r sensetive
+//Geet and Set Function are public here attributes are private
+class classname{
+private:
+int Secret_Password="Manish@19";
+string SecretName="ManishSakpal";
+public:
+void showSecretnameandPassword(){
+cout<<"Password is "<<Secret_Password<<"Secret Name "<<SecretName;
+}
+void showSecretname(){
+cout<<"Secret Name"<<SecretName;
+}
+void showSecretPassword(){
+cout<<"Password is "<<Secret_Password;
+}
+
+void SetPAsswordAndName(string password,string name){
+Secret_Password=password;
+SecretName=name;
+}
+
+};
+
+int main(){
+classname objClass;
+objClass.showSecretname(); //Will show the private attribute
+objClass.SetPAsswordAndName("Sakpal@19","Sakpal"); //Will update the private attribute values
+return 0;
+}
+
+
+
+//Inheritance(use of someone else attribute and methonds)---------------------------------
+//Base is parent and derived(from someone with its feature) is child
+
+#include <iostream>
+#include <string>
+using namespace std;
+class classname1{
+void function1(){
+cout<<"hi m function1";
+}
+};
+
+
+class classname2:public classname1{
+void function2(){
+cout<<"Hi m Function2";
+}
+};
+
+int main(){
+classname2 cn2;
+cn2.function1();
+return 0;
+}
+
+
+//
+
+
+#Polymorphism mulilevel child derived(inherited): public parent derived(inherited):public GrandParent{} having something in common
