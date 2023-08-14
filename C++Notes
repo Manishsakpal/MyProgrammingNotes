@@ -1,108 +1,39 @@
-c notes         
+# c notes      
 
- 
-
- 
-
-key words:
-
- 
-
+## key words:
 getline()               #Input with Spacing
-
- 
-
 varibale.length()       #
-
- 
-
 break
+continue   
 
- 
-
-continue     
-
- 
-
+#Data types
 datatype varibale[size]={data of single type};
-
- 
-
 &variable           #will give u address of the variable
-
- 
-
 datatype* variable=&variable    #storing a pointer in the variable
 
- 
-
- 
-
+ #User Input
 getline(cin,varibale);   #mainly usefull for string data save with using space
 
- 
-
+# Importing exterenal/internal Libraries
 #include <cmath>       #Math Library for C
 
  
-
+# Display printing
 cout<<sqrt(variable);  #Squareroot
 
- 
 
- 
-
-Conditional
-
- 
-
+# Conditional
 (condition)?if:else                           # ternary
-
- 
-
 if(condition){performer;}
-
- 
-
 else{performer;}
-
- 
-
 else if(conditon){performer;}
-
- 
-
 switch(varibale){case varible: performer; break;   
-
- 
-
                            default:performer;}
 
- 
-
- 
-
- 
-
-loops:
-
- 
+# loops:
 
 while(condition){performer;}
-
- 
-
 for(;condition;increment){performer;}
-
- 
-
 do{performer;}while(condition)
-
- 
-
- 
-
- 
-
 void functionName(datatype varibale,datatype varibale){performer;}      #No Return
 datatype functionName(datatype varibale,datatype varibale){performer; return ;}      #With Return
